@@ -1,6 +1,6 @@
 # Tuning_Stardust
 
-Tuning tool to estimate Stardust parameters allowing to achieve the highest average cell stability score.
+Tuning tool to estimate Stardust parameters (space weight, resolution) allowing to achieve the highest average cell stability score.
 The docker image will be available on the Docker Hub soon.
 
 ## Installation
@@ -44,3 +44,8 @@ cd runExample
 # run tuning
 Rscript runTuning.R NameNewDataset
 ```
+
+## Output
+
+Once that the tuning is ended, estimated parameters are sotred in file called Results.txt stored inside /runExample/Dataset/NameDataset.
+To have more details about the output format, you can consult the help manual of GenS() function: https://cran.r-project.org/web/packages/GenSA/GenSA.pdf
