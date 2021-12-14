@@ -1,6 +1,11 @@
-library(rCASC)
+library("argparser")
+library("rCASC")
 
-name.dir = "MK"
+p <- arg_parser("permutation")
+p <- add_argument(p, "folder", help="dataset name")
+argv <- parse_args(p)
+
+name.dir = argv$folder
 
 path=getwd()
 source(paste(path,"tuneStardust.R",sep="/"))
