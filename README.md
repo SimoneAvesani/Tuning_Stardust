@@ -56,7 +56,7 @@ Rscript runTuning.R NameNewDataset
 ## Output
 
 Once that the tuning is ended, estimated parameters are sotred in file called Results.txt stored inside /runExample/Dataset/NameDataset.
-To have more details about the output format, you can consult the help manual of GenS() function: https://cran.r-project.org/web/packages/GenSA/GenSA.pdf
+To have more details about the output format, you can consult the help manual of GenSA() function: https://cran.r-project.org/web/packages/GenSA/GenSA.pdf
 The output parameters are stored in the following order: 
 
 1) space weight 
