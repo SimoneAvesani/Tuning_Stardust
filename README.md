@@ -4,7 +4,15 @@ Tuning tool to estimate Stardust parameters (space weight, resolution) allowing 
 The docker image will be available on the Docker Hub soon.
 
 ## Installation
-No installation is required to run the tuning tool. The only prerequisite is to have installed docker and git on your local machine.
+No installation is required to run the tuning tool. 
+Before to start verify the installation of the following tools:
+
+- git
+- R
+- docker
+- R package "rCASC"
+- R package "argparser"
+
 To prepare your enviromnent follow these steps:
 
 ```
