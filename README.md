@@ -5,7 +5,7 @@ The docker image will be available on the Docker Hub soon.
 
 ## Installation
 No installation is required to run the tuning tool. 
-Before to start verify the installation of the following tools:
+Before starting, verify the installation of the following tools:
 
 - git
 - R
@@ -13,14 +13,14 @@ Before to start verify the installation of the following tools:
 - R package "rCASC"
 - R package "argparser"
 
-To prepare your enviromnent follow these steps:
+To prepare your environment follow these steps:
 
 ```
 # clone the repository
 git clone https://github.com/SimoneAvesani/Tuning_Stardust.git
 
 # move inside the directory 
-cd /Tuning_Stardust
+cd Tuning_Stardust/
 
 # build the docker image
 bash run_container.sh
@@ -34,7 +34,7 @@ Once that the docker image is built, run the following commands:
 # move inside example directory 
 cd runExample/
 
-# run tuning tool specifyng the dataset directory name contained inside /runExample/Dataset
+# run tuning tool specifying the dataset directory name contained inside /runExample/Dataset
 Rscript runTuning.R MK 
 
 ```
@@ -55,7 +55,7 @@ Rscript runTuning.R NameNewDataset
 
 ## Output
 
-Once that the tuning is ended, estimated parameters are sotred in file called Results.txt stored inside /runExample/Dataset/NameDataset.
+Once that the tuning is ended, estimated parameters are stored in a file called results.txt stored inside /runExample/Dataset/NameDataset.
 To have more details about the output format, you can consult the help manual of GenSA() function: https://cran.r-project.org/web/packages/GenSA/GenSA.pdf
 The output parameters are stored in the following order: 
 
