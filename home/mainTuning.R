@@ -37,7 +37,7 @@ upper=c(1, 1.5)
 #lower = c(0.1)
 #upper = c(1)
 
-out <- GenSA(lower = lower, upper = upper, fn = prediction,control = list(max.call = 10, maxit = 10 ))
+out <- GenSA(lower = lower, upper = upper, fn = prediction,control = list(max.call = 100))
 
 sink("results.txt")
 print(out)
